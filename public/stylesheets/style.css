@@ -1,0 +1,73 @@
+/* To make the login form on the right side and signup on left/center
+
+div.login_right {
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    border:0px solid #D3D3D3;
+    padding: 10px;
+}
+
+div.signup_center {
+    margin: auto;
+    width: 60%;
+    border: 0px solid #D3D3D3;
+    padding: 10px;
+}
+*/
+
+form {
+    /* To make both forms the same */
+    margin-top: auto;
+    padding: 1em;
+    margin-left: 50px;
+    margin-bottom: 50px; 
+
+}
+
+fieldset {
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-left: 
+    /* To make the login heading centered above form */
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+
+form.login {
+    /* Just to center the form on the page */
+    width: 200px;
+
+}
+
+form.signup {
+    /* Just to center the form on the page */
+    width: 200px;
+}
+
+
+label {
+  /* To make all labels align under eachother in an organjzed block */
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+button {
+  display: block;
+}
+
+
+
+
+
+
+
+
+

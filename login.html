@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dresses2Go</title>
+
+    <!-- Add CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/stylesheets/style_bootstrap.css">
+
+  </head>
+
+  <body> 
+    <header>Dresses2Go</header>
+
+<!-- Log in form -->
+
+        
+      <form action="/login" class="form-horizontal" method="post">
+
+        <fieldset> <!-- To make a border around form with title in it -->
+
+          <legend>Login Form</legend>
+          
+          <div class="form-group">
+            <label for="login_email" class="col-md-2 control-label"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> E-mail / Username:</label>
+            <div class="col-md-2">
+              <input type="email" name="login_email" class="form-control" id="login_email"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login_password" class="col-md-2 control-label"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Password:</label>
+            <div class="col-md-2">
+              <input type="password" name="login_password" class="form-control" id="login_password"/>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-default"> Log In</button>
+
+        </fieldset>
+      </form>
+        
+        
+<!--Sign up form -->
+
+    <div>
+      <form action="/signup" class="form-horizontal" method="post">
+          
+        <fieldset>
+          <legend>Signup Form</legend>
+
+
+        <div class="form-group">
+          <label for="signup_firstname">First name</label>
+          <input type="text" name="signup_firstname" id="signup_firstname"/>
+        </div>
+
+     
+        <div class="form-group">
+          <label for="signup_lastname">Last name</label>
+          <input type="text"/>
+        </div>
+
+        <div class="form-group">  
+          <label for="signup_email">Email</label>
+          <input type="email" name="signup_email" id="signup_email"/>
+        </div>
+
+
+        <div class="form-group">
+          <label for="signup_password">Password</label>
+          <input type="password" name="signup_password" id="signup_password"/>
+        </div>
+
+        <div class="form-group">
+          <label for="signup_password">Confirm password</label>
+          <input type="password" name="signup_password" id="signup_password"/>
+        </div>
+
+          <button style="submit" class="btn btn-default">Sign Up</button>
+
+        </fieldset>
+
+      </form>
+    </div>
+  </body>
+</html>
+
+  
