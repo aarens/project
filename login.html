@@ -11,7 +11,7 @@
   </head>
 
   <body> 
-    <header>Dresses2Go</header>
+    <header>Dresses 2 Go</header>
 
 <!-- Log in form -->
 
@@ -20,23 +20,40 @@
 
         <fieldset> <!-- To make a border around form with title in it -->
 
-          <legend>Login Form</legend>
-          
           <div class="form-group">
-            <label for="login_email" class="col-md-2 control-label"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> E-mail / Username:</label>
+            <div class="col-sm-offset-2 col-sm-10">
+              <legend>Login Form</legend> <!--to make this line up add div class form-group-->
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login_email" class="col-md-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Email/Username:</label>
             <div class="col-md-2">
-              <input type="email" name="login_email" class="form-control" id="login_email"/>
+              <input type="email" name="login_email" class="form-control" id="login_email" placeholder="Email"/>
             </div>
           </div>
 
           <div class="form-group">
             <label for="login_password" class="col-md-2 control-label"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Password:</label>
             <div class="col-md-2">
-              <input type="password" name="login_password" class="form-control" id="login_password"/>
+              <input type="password" name="login_password" class="form-control" id="login_password" placeholder="Password"/>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-default"> Log In</button>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Remember me</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-info"> Log In</button>
+            </div>
+          </div>
 
         </fieldset>
       </form>
@@ -44,42 +61,61 @@
         
 <!--Sign up form -->
 
-    <div>
+
       <form action="/signup" class="form-horizontal" method="post">
           
         <fieldset>
-          <legend>Signup Form</legend>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <legend>Signup Form</legend>
+            </div>
+          </div>
 
 
         <div class="form-group">
-          <label for="signup_firstname">First name</label>
-          <input type="text" name="signup_firstname" id="signup_firstname"/>
+          <label for="signup_firstname" class="col-md-2 control-label">First name</label>
+          <div class="col-md-2">  
+            <input type="text" name="signup_firstname" id="signup_firstname" class="form-control"/>
+          </div>
         </div>
 
      
         <div class="form-group">
-          <label for="signup_lastname">Last name</label>
-          <input type="text"/>
+          <label for="signup_lastname" class="col-md-2 control-label">Last name</label>
+          <div class="col-md-2"> 
+            <input type="text" class="form-control"/>
+          </div>
         </div>
 
         <div class="form-group">  
-          <label for="signup_email">Email</label>
-          <input type="email" name="signup_email" id="signup_email"/>
+          <label for="signup_email"class="col-md-2 control-label">Email</label>
+          <div class="col-md-2">
+            <input type="email" name="signup_email" id="signup_email" class="form-control"/>
+          </div>
         </div>
 
 
         <div class="form-group">
-          <label for="signup_password">Password</label>
-          <input type="password" name="signup_password" id="signup_password"/>
+          <label for="signup_password"class="col-md-2 control-label">Password</label>
+          <div class="col-md-2">
+            <input type="password" name="signup_password" id="signup_password" class="form-control"/>
+          </div>
+        </div>  
+
+        <div class="form-group">
+          <label for="signup_password"class="col-md-2 control-label">Confirm password</label>
+          <div class="col-md-2">
+            <input type="password" name="signup_password" id="signup_password" class="form-control"/>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="signup_password">Confirm password</label>
-          <input type="password" name="signup_password" id="signup_password"/>
+          <div class="col-sm-offset-2 col-sm-10">
+            <button style="submit" class="btn btn-success btn-lg">Sign Up</button> <!--You can change the color of the button by adding success, warning, danger, info, primary..etc-->
+          </div>
         </div>
-
-          <button style="submit" class="btn btn-default">Sign Up</button>
-
+        
         </fieldset>
 
       </form>
